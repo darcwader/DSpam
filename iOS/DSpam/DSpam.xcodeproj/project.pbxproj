@@ -12,10 +12,40 @@
 		4C0A39AC1FA5DD1C00B21EEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A39AA1FA5DD1C00B21EEF /* Main.storyboard */; };
 		4C0A39AE1FA5DD1C00B21EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A39AD1FA5DD1C00B21EEF /* Assets.xcassets */; };
 		4C0A39B11FA5DD1C00B21EEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A39AF1FA5DD1C00B21EEF /* LaunchScreen.storyboard */; };
-		4C0A39BA1FA5DD5400B21EEF /* words_array.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A39B81FA5DD5400B21EEF /* words_array.json */; };
-		4C0A39BB1FA5DD5400B21EEF /* words_idf.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A39B91FA5DD5400B21EEF /* words_idf.json */; };
-		4C0A39C11FA5FFB500B21EEF /* SpamMessageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A39C01FA5FFB500B21EEF /* SpamMessageClassifier.mlmodel */; };
+		4C0A39C51FA744B000B21EEF /* words_idf.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A39C21FA744AF00B21EEF /* words_idf.json */; };
+		4C0A39C61FA744B000B21EEF /* SpamMessageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A39C31FA744AF00B21EEF /* SpamMessageClassifier.mlmodel */; };
+		4C0A39C71FA744B000B21EEF /* words_array.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A39C41FA744AF00B21EEF /* words_array.json */; };
+		4C0A39CD1FA74A9600B21EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A39CC1FA74A9600B21EEF /* Assets.xcassets */; };
+		4C0A39D41FA74A9700B21EEF /* DSpamExtension MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4C0A39D31FA74A9700B21EEF /* DSpamExtension MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4C0A39D91FA74A9700B21EEF /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0A39D81FA74A9700B21EEF /* Messages.framework */; };
+		4C0A39DC1FA74A9700B21EEF /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A39DB1FA74A9700B21EEF /* MessagesViewController.swift */; };
+		4C0A39DF1FA74A9700B21EEF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A39DD1FA74A9700B21EEF /* MainInterface.storyboard */; };
+		4C0A39E11FA74A9700B21EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A39E01FA74A9700B21EEF /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C0A39D51FA74A9700B21EEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C0A399B1FA5DD1C00B21EEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C0A39D21FA74A9700B21EEF;
+			remoteInfo = "DSpamExtension MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C0A39E61FA74A9700B21EEF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4C0A39D41FA74A9700B21EEF /* DSpamExtension MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4C0A39A31FA5DD1C00B21EEF /* DSpam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSpam.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,9 +55,18 @@
 		4C0A39AD1FA5DD1C00B21EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0A39B01FA5DD1C00B21EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0A39B21FA5DD1C00B21EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4C0A39B81FA5DD5400B21EEF /* words_array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words_array.json; sourceTree = "<group>"; };
-		4C0A39B91FA5DD5400B21EEF /* words_idf.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = words_idf.json; sourceTree = "<group>"; };
-		4C0A39C01FA5FFB500B21EEF /* SpamMessageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SpamMessageClassifier.mlmodel; sourceTree = "<group>"; };
+		4C0A39C21FA744AF00B21EEF /* words_idf.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = words_idf.json; path = ../../../ML/words_idf.json; sourceTree = "<group>"; };
+		4C0A39C31FA744AF00B21EEF /* SpamMessageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = SpamMessageClassifier.mlmodel; path = ../../../ML/SpamMessageClassifier.mlmodel; sourceTree = "<group>"; };
+		4C0A39C41FA744AF00B21EEF /* words_array.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = words_array.json; path = ../../../ML/words_array.json; sourceTree = "<group>"; };
+		4C0A39CA1FA74A9600B21EEF /* DSpamExtension.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSpamExtension.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0A39CC1FA74A9600B21EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C0A39CE1FA74A9600B21EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C0A39D31FA74A9700B21EEF /* DSpamExtension MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "DSpamExtension MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0A39D81FA74A9700B21EEF /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		4C0A39DB1FA74A9700B21EEF /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		4C0A39DE1FA74A9700B21EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4C0A39E01FA74A9700B21EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4C0A39E21FA74A9700B21EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +77,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C0A39D01FA74A9700B21EEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0A39D91FA74A9700B21EEF /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -45,6 +92,9 @@
 			isa = PBXGroup;
 			children = (
 				4C0A39A51FA5DD1C00B21EEF /* DSpam */,
+				4C0A39CB1FA74A9600B21EEF /* DSpamExtension */,
+				4C0A39DA1FA74A9700B21EEF /* DSpamExtension MessagesExtension */,
+				4C0A39D71FA74A9700B21EEF /* Frameworks */,
 				4C0A39A41FA5DD1C00B21EEF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				4C0A39A31FA5DD1C00B21EEF /* DSpam.app */,
+				4C0A39CA1FA74A9600B21EEF /* DSpamExtension.app */,
+				4C0A39D31FA74A9700B21EEF /* DSpamExtension MessagesExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,9 +112,9 @@
 		4C0A39A51FA5DD1C00B21EEF /* DSpam */ = {
 			isa = PBXGroup;
 			children = (
-				4C0A39C01FA5FFB500B21EEF /* SpamMessageClassifier.mlmodel */,
-				4C0A39B81FA5DD5400B21EEF /* words_array.json */,
-				4C0A39B91FA5DD5400B21EEF /* words_idf.json */,
+				4C0A39C31FA744AF00B21EEF /* SpamMessageClassifier.mlmodel */,
+				4C0A39C41FA744AF00B21EEF /* words_array.json */,
+				4C0A39C21FA744AF00B21EEF /* words_idf.json */,
 				4C0A39A61FA5DD1C00B21EEF /* AppDelegate.swift */,
 				4C0A39A81FA5DD1C00B21EEF /* ViewController.swift */,
 				4C0A39AA1FA5DD1C00B21EEF /* Main.storyboard */,
@@ -71,6 +123,34 @@
 				4C0A39B21FA5DD1C00B21EEF /* Info.plist */,
 			);
 			path = DSpam;
+			sourceTree = "<group>";
+		};
+		4C0A39CB1FA74A9600B21EEF /* DSpamExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4C0A39CC1FA74A9600B21EEF /* Assets.xcassets */,
+				4C0A39CE1FA74A9600B21EEF /* Info.plist */,
+			);
+			path = DSpamExtension;
+			sourceTree = "<group>";
+		};
+		4C0A39D71FA74A9700B21EEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0A39D81FA74A9700B21EEF /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C0A39DA1FA74A9700B21EEF /* DSpamExtension MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4C0A39DB1FA74A9700B21EEF /* MessagesViewController.swift */,
+				4C0A39DD1FA74A9700B21EEF /* MainInterface.storyboard */,
+				4C0A39E01FA74A9700B21EEF /* Assets.xcassets */,
+				4C0A39E21FA74A9700B21EEF /* Info.plist */,
+			);
+			path = "DSpamExtension MessagesExtension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +173,40 @@
 			productReference = 4C0A39A31FA5DD1C00B21EEF /* DSpam.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4C0A39C91FA74A9600B21EEF /* DSpamExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0A39E71FA74A9700B21EEF /* Build configuration list for PBXNativeTarget "DSpamExtension" */;
+			buildPhases = (
+				4C0A39C81FA74A9600B21EEF /* Resources */,
+				4C0A39E61FA74A9700B21EEF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C0A39D61FA74A9700B21EEF /* PBXTargetDependency */,
+			);
+			name = DSpamExtension;
+			productName = DSpamExtension;
+			productReference = 4C0A39CA1FA74A9600B21EEF /* DSpamExtension.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		4C0A39D21FA74A9700B21EEF /* DSpamExtension MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C0A39E31FA74A9700B21EEF /* Build configuration list for PBXNativeTarget "DSpamExtension MessagesExtension" */;
+			buildPhases = (
+				4C0A39CF1FA74A9700B21EEF /* Sources */,
+				4C0A39D01FA74A9700B21EEF /* Frameworks */,
+				4C0A39D11FA74A9700B21EEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DSpamExtension MessagesExtension";
+			productName = "DSpamExtension MessagesExtension";
+			productReference = 4C0A39D31FA74A9700B21EEF /* DSpamExtension MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +218,14 @@
 				ORGANIZATIONNAME = sonde;
 				TargetAttributes = {
 					4C0A39A21FA5DD1C00B21EEF = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					4C0A39C91FA74A9600B21EEF = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					4C0A39D21FA74A9700B21EEF = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -123,6 +245,8 @@
 			projectRoot = "";
 			targets = (
 				4C0A39A21FA5DD1C00B21EEF /* DSpam */,
+				4C0A39C91FA74A9600B21EEF /* DSpamExtension */,
+				4C0A39D21FA74A9700B21EEF /* DSpamExtension MessagesExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -133,10 +257,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0A39B11FA5DD1C00B21EEF /* LaunchScreen.storyboard in Resources */,
-				4C0A39BA1FA5DD5400B21EEF /* words_array.json in Resources */,
+				4C0A39C71FA744B000B21EEF /* words_array.json in Resources */,
 				4C0A39AE1FA5DD1C00B21EEF /* Assets.xcassets in Resources */,
 				4C0A39AC1FA5DD1C00B21EEF /* Main.storyboard in Resources */,
-				4C0A39BB1FA5DD5400B21EEF /* words_idf.json in Resources */,
+				4C0A39C51FA744B000B21EEF /* words_idf.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0A39C81FA74A9600B21EEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0A39CD1FA74A9600B21EEF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C0A39D11FA74A9700B21EEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0A39E11FA74A9700B21EEF /* Assets.xcassets in Resources */,
+				4C0A39DF1FA74A9700B21EEF /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,12 +289,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C0A39A91FA5DD1C00B21EEF /* ViewController.swift in Sources */,
-				4C0A39C11FA5FFB500B21EEF /* SpamMessageClassifier.mlmodel in Sources */,
+				4C0A39C61FA744B000B21EEF /* SpamMessageClassifier.mlmodel in Sources */,
 				4C0A39A71FA5DD1C00B21EEF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C0A39CF1FA74A9700B21EEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C0A39DC1FA74A9700B21EEF /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C0A39D61FA74A9700B21EEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C0A39D21FA74A9700B21EEF /* DSpamExtension MessagesExtension */;
+			targetProxy = 4C0A39D51FA74A9700B21EEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4C0A39AA1FA5DD1C00B21EEF /* Main.storyboard */ = {
@@ -170,6 +327,14 @@
 				4C0A39B01FA5DD1C00B21EEF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4C0A39DD1FA74A9700B21EEF /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C0A39DE1FA74A9700B21EEF /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -312,6 +477,68 @@
 			};
 			name = Release;
 		};
+		4C0A39E41FA74A9700B21EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BENZ68VN2K;
+				INFOPLIST_FILE = "DSpamExtension MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.sonde.DSpamExtension.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C0A39E51FA74A9700B21EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BENZ68VN2K;
+				INFOPLIST_FILE = "DSpamExtension MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.sonde.DSpamExtension.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4C0A39E81FA74A9700B21EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BENZ68VN2K;
+				INFOPLIST_FILE = DSpamExtension/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = in.sonde.DSpamExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4C0A39E91FA74A9700B21EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BENZ68VN2K;
+				INFOPLIST_FILE = DSpamExtension/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = in.sonde.DSpamExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +556,24 @@
 			buildConfigurations = (
 				4C0A39B61FA5DD1C00B21EEF /* Debug */,
 				4C0A39B71FA5DD1C00B21EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0A39E31FA74A9700B21EEF /* Build configuration list for PBXNativeTarget "DSpamExtension MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0A39E41FA74A9700B21EEF /* Debug */,
+				4C0A39E51FA74A9700B21EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C0A39E71FA74A9700B21EEF /* Build configuration list for PBXNativeTarget "DSpamExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C0A39E81FA74A9700B21EEF /* Debug */,
+				4C0A39E91FA74A9700B21EEF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
