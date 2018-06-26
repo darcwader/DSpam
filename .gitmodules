@@ -1,0 +1,3 @@
+[submodule "ThirdParty/PorterStemmer"]
+	path = ThirdParty/PorterStemmer
+	url = https://github.com/wooorm/stmr.c
